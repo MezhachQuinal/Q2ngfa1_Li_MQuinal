@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+}
+a{
+    text-decoration: 0;
+}
+nav{
+    display: flex;
+    background-color: #a2c5ac;
+    justify-content: space-around;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+}
+.icon{
+	background: url(../images/sprite3.png);
+    width: 66px;
+	height: 66px;
+    display: inline-block;
+}
+#youtube{
+    background-position: -439px -221px;
+}
+#twitter{
+    background-position: -66px -72px;
+}
+#facebook{
+    background-position: -439px -146px;
+}
+#vine{
+    background-position: -513px -72px;
+}
+@media screen and (max-width:600px){
+    nav{
+        position: relative;
+        background-color: #7f7caf;
+    }
+    .pagetitle{
+        background-color: #8a92e2;
+        padding: 3px;
+        border-radius: 5px;
+    }
+    .links{
+        display: none;
+        z-index: 1;
+        position: absolute;
+        background-color: #8a92e2;
+        min-width: 100vw;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    .links a{
+        color: black;
+        padding-top: 7vh;
+        padding-bottom: 1vh;
+        display: block;
+        border-radius: 5px;
+    }
+    .links a:hover{background-color: #d3fff3;}
+    nav:hover .links{display:block;}
+    nav:hover .pagetitle{background-color: #271e9d;}
+}
